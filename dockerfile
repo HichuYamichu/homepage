@@ -17,6 +17,7 @@ FROM scratch
 WORKDIR /app
 
 COPY --from=build /build/homepage /app/
+COPY ./static /app/static
 
 EXPOSE 3000
 
