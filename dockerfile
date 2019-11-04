@@ -10,7 +10,7 @@ RUN go mod download
 
 COPY . .
 
-RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags '-extldflags "-static"' -o homepage ./main.go
+RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -ldflags '-extldflags "-static"' -o homepage ./cmd/homepage/main.go
 
 FROM scratch
 
@@ -20,4 +20,4 @@ COPY --from=build /build/homepage /app/
 
 EXPOSE 3000
 
-CMD ["./homepage"]
+CMD ["./homepage", "-port=3000", "-host=0.0.0.0"]
