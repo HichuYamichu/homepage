@@ -1,20 +1,17 @@
 version: '3.4'
 
-x-defaults: &defaults
-  restart: unless-stopped
-  networks:
-    - main
-  logging:
-    driver: loki
-    options:
-      loki-url: "http://localhost:3100/api/prom/push"
-  
 services:
   homepage:
-    <<: *defaults
-    build: .
+    image: hichuyamichu/homepage
     env_file:
       - ./.env
+    restart: unless-stopped
+    networks:
+      - main
+    logging:
+      driver: loki
+      options:
+        loki-url: "http://localhost:3100/api/prom/push"
     
 networks:
   main:
