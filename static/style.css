@@ -89,10 +89,16 @@ h1 {
   .container > p {
     display: none;
   }
+
+  .avatar {
+    width: 50;
+    height: 50;
+  }
 }
 
 footer {
   display: flex;
+  align-items: center;
   height: 5vh;
   background-color: black;
   padding: 15px;
