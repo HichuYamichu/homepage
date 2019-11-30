@@ -21,10 +21,15 @@ header {
   height: 30vh;
   color: white;
   background-color: black;
+  position: relative;
 }
 
 header > h1 {
-  font-size: 3rem;
+  font-weight: 600;
+  font-size: 5rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 main {
@@ -91,8 +96,8 @@ h1 {
   }
 
   .avatar {
-    width: 50;
-    height: 50;
+    width: 75px !important;
+    height: 75px !important;
   }
 }
 
