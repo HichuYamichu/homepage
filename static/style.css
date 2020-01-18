@@ -138,3 +138,15 @@ footer > span {
   top: 0;
   left: 0;
 }
+
+.copy {
+  white-space: nowrap
+}
+
+.spacer {
+  width: 100%;
+}
+
+.icon {
+  margin-right: 5px;
+}
