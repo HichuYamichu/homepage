@@ -57,8 +57,8 @@ class Circle {
   }
 }
 
-for (let i = 0; i < 70; i++) {
-  const radious = 30;
+for (let i = 0; i < 80; i++) {
+  const radious = 40;
   const x = Math.random() * (canvas.width - radious * 2) + radious;
   const y = Math.random() * (canvas.height - radious * 2) + radious;
   const dx = (Math.random() - 0.5) * 2;
