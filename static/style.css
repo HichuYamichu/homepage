@@ -7,18 +7,6 @@ canvas {
   position: absolute;
 }
 
-footer {
-  display: flex;
-  align-items: center;
-  height: 5vh;
-  background-color: black;
-  padding: 15px;
-}
-
-footer > span {
-  color: white;
-}
-
 .larege-text {
   font-size: 10rem;
 }
@@ -33,4 +21,20 @@ footer > span {
 .f00ter {
   background-color: black;
   padding: 50px !important;
+}
+
+.bg-main {
+  background-color: #F40873;
+  border-color: transparent;
+  color: white;
+}
+
+.bg-main:hover {
+  background-color: rgb(224, 0, 101);
+  border-color: transparent;
+  color: white;
+}
+
+.text-main {
+  color: #F40873;
 }
